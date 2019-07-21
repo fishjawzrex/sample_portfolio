@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<style media="screen">
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    /*background-color: #333;*/
+    position: fixed;
+    width: 100%;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    /*background: black;*/
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    /*background-color: #ddd;*/
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #000000;
+    color: white;
+  }
+  body {
+    background: black;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    /*background-image: url("https://cdn.pixabay.com/photo/2011/12/13/14/30/earth-11014_960_720.jpg");*/
+
+
+  }
+  #welcome-section {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2011/12/14/12/18/space-11099_960_720.jpg");
+  }
+
+  #projects {
+    height: 500px;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    /*flex:1;*/
+    width: 100%;
+    /*border: 1px solid red;*/
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    /*border: 1px solid orange;*/
+    margin: 20px;
+  }
+  .grid-container {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+  }
+  .profile-links {
+    display: flex;
+    flex-direction: row;
+    /*background: black;*/
+  }
+  #myLinks {
+    /*background: black;*/
+  }
+
+  @media only screen and (max-width: 600px) {
+  body {
+    background-color: hsl(219, 50%, 17%);
+  }
+  .profile-links {
+    display: flex;
+    flex-direction: row;
+    background: hsl(219, 50%, 17%);
+  }
+  #myLinks {
+    background: hsl(219, 50%, 17%);
+  }
+}
+  .screen_text {
+    margin: 50px;
+  }
+
+</style>
+<script type="text/javascript">
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Portfolio Web Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/298405996d.js"></script>
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav" id="navbar">
+      <div class="profile-links">
+        <a href="https://github.com/fishjawzrex" id="profile-link" target=_blank class="active"><i class="fab fa-github-alt fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/feyisayo-adediwura-43a57068/" target=_blank class="active"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="#home" class="active"><i class="fab fa-facebook-square fa-lg"></i></a>
+      </div>
+
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <section id="welcome-section">
+      <div class="screen_text">
+        <h1>Full Stack Web Developer</h1>
+          <p>Feyisayo Adediwura</p>
+      </div>
+    </section>
+    <section id="projects">
+      <h1><a href="https://codepen.io/fishjawzrex/pen/WqBReo/">Projects</a></h1>
+      <div class="grid-container">
+        <div class="row">
+          <div class="column project-tile">
+            <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="fishjawzrex" data-slug-hash="WqBReo" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="WqBReo">
+  <span>See the Pen <a href="https://codepen.io/fishjawzrex/pen/WqBReo/">
+  WqBReo</a> by Feyisayo A Adediwura (<a href="https://codepen.io/fishjawzrex">@fishjawzrex</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </div>
+          <div class="column">
+            <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="fishjawzrex" data-slug-hash="wLbgqJ" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="product_landing_page">
+  <span>See the Pen <a href="https://codepen.io/fishjawzrex/pen/wLbgqJ/">
+  product_landing_page</a> by Feyisayo A Adediwura (<a href="https://codepen.io/fishjawzrex">@fishjawzrex</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </div>
+          <div class="row">
+            <div class="column">
+              <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="fishjawzrex" data-slug-hash="ydWgoK" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="survey_page">
+    <span>See the Pen <a href="https://codepen.io/fishjawzrex/pen/ydWgoK/">
+    survey_page</a> by Feyisayo A Adediwura (<a href="https://codepen.io/fishjawzrex">@fishjawzrex</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <div class="column">
+              <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="fishjawzrex" data-slug-hash="gNJgGM" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gNJgGM">
+  <span>See the Pen <a href="https://codepen.io/fishjawzrex/pen/gNJgGM/">
+  gNJgGM</a> by Feyisayo A Adediwura (<a href="https://codepen.io/fishjawzrex">@fishjawzrex</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
